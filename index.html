@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script type="application/javascript" src="harmonic_oscillator.js"></script>
+		<style type="text/css">
+			canvas { 
+			  border: solid 1px black;
+			}
+		</style>
+	</head>
+	<body onload="init();" onkeypress="key_press(event);">
+		<canvas id="canvas" width="600" height="400" onmousemove="mouse_move(event);" onclick="mouse_click(event);" onmousedown="mouse_down(event);" onmouseup="mouse_up(event);">
+			Your browser does not support the HTML5 canvas element.
+		</canvas> <br/>
+		Mass: <input type="text" id="mass" onblur="set_mass()"/><br/>
+		Friction: <input type="text" id="friction" onblur="set_friction()"/><br/>
+		Spring Constant: <input type="text" id="spring" onblur="set_spring()"/><br/>
+		Press "p" to pause.
+	</body>
+</html>
